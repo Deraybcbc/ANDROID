@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0E1E1E1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFF"
+                android:gravity="center"
+                android:text="AUTOESCUELA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#830909"
+                android:textColorHighlight="#0223FF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PR1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 1"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta01"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="¿Puede realizar un cambio de sentido en un lugar donde esté prohibido adelantar?  "
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen1"
+                android:layout_width="350dp"
+                android:layout_height="331dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0001" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Sí, excepto entre la puesta y la salida de sol, porque disminuye la visibilidad."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) No, salvo que el cambio de sentido esté expresamente autorizado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) Sí, cuando la circulación en sentido contrario lo permita."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Sí, se puede realizar un cambio de sentido en un lugar donde esté prohibido adelantar."
+                    android:textSize="17dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/PR2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 2"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta02"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="En un vehículo de autoescuela realizando clases prácticas, ¿quién es considerado el conductor?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen2"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g1052" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Tanto al alumno como al profesor."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) El alumno, ya que maneja el volante."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) El profesor, por ser responsable de los mandos adicionales."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Los dos que van el coche son el conductor."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/PR3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 3"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta03"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="¿Con esta señalización, ¿a qué velocidad debe circular?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen3"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0004" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Obligatoriamente a 30 km/h"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Al menos a 30 km/h."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) A 30 km/h, como recomendación, durante el tramo que subsista el peligro."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Con esta señalización, debes circular a la velocidad que te parezca más segura"
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/PR4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 4"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta04"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="Una línea blanca continua sobre la calzada, sensiblemente más ancha que en el caso general..."
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen4"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0016" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) indica la existencia de un carril especial."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) sirve para delimitar, únicamente, los carriles bus."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) indica el borde de la calzada."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) indica que debes utilizar ese espacio adicional como un carril adicional para adelantar a otros vehículos de forma segura."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/PR5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 5"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta05"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="¿Cuántos espejos retrovisores tienen que llevar instalados las motocicletas?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen5"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0890" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Obligatoriamente uno en el lado derecho, pero pueden llevar dos."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Siempre deben llevar dos espejos, uno en cada lado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) Un espejo exterior izquierdo si no superan los 100 km/h y dos, uno en cada lado, si la velocidad es mayor."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Las motocicletas no necesitan llevar ningún espejo retrovisor instalado."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/PR6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 6"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta06"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="¿Cuál es la tasa de alcohol máxima permitida a un conductor novel?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen6"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0141" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) 0,25 miligramos de alcohol por litro de aire espirado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) 0,3 miligramos de alcohol por litro de aire espirado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) 0,15 miligramos de alcohol por litro de aire espirado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) 1,00 miligramos de alcohol por litro de aire espirado."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/PR7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 7"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta07"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="Cuando un vehículo accidentado comienza a arder, ¿qué se debe hacer primero?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen7"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/_096" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Apagar el fuego."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Sacar rápidamente a los heridos."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) Ir a buscar ayuda."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) No hacer nada"
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/PR8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 8"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta08"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="En esta situación, ¿qué debe hacer si va a girar a la izquierda?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen8"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g0033" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Continuar, obedeciendo al semáforo de la derecha."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Detenerse, obedeciendo al semáforo situado a la izquierda."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) Sólo detenerse si hay peatones cruzando."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Si va a girar a la izquierda en esta situación, debes aumentar la velocidad."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/PR9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 9"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta09"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="¿Está permitido colocar el dispositivo de preseñalización de peligro alejado del vehículo averiado?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen9"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/g1204" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) Sí, alejado se podrá apreciar mejor."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Sí, debe estar al menos a 100 metros."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) No, se debe colocar en la parte más alta posible del vehículo inmovilizado."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Sí, está permitido colocar el dispositivo de preseñalización de peligro alejado del vehículo averiado."
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/PR10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#980000"
+                android:text="Pregunta 10"
+                android:textAlignment="center"
+                android:textColor="#ECECEC"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/Pregunta010"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="Para entrar en una autopista, ¿a qué velocidad debe circular?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/Imagen10"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/gs1" />
+
+            <RadioGroup
+                android:id="@+id/Pregunta10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/Opcion1.10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a) A la máxima velocidad permitida en la autopista."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2.10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b) Siempre muy despacio para entrar con seguridad."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3.10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c) A la velocidad adecuada que permita incorporarse con seguridad."
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4.10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d) Para entrar en una autopista, debes circular a la velocidad que desees"
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/Boton"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="Enviar"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
